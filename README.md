@@ -12,24 +12,13 @@ behavior applies; your client stays in its current window.
 Requires tmux **3.2+**, **fzf**, and a POSIX shell. Install fzf on the machine
 running tmux (including remote machines).
 
-## Try this checkout
-
-Run inside tmux:
-
-```sh
-/home/avalitan/dev/tmux-addons/pane-swap.tmux
-```
-
-This registers the shortcut in the running server without editing your config.
-Use the actual checkout path if you move it.
-
 ## TPM installation
 
 Push this repository to your own Git host, then add its repository to your tmux
 config **before** the existing TPM initialization line:
 
 ```tmux
-set -g @plugin 'YOUR_GITHUB_USER/YOUR_REPOSITORY'
+set -g @plugin 'avalitan/tmux-pane-swap'
 ```
 
 Replace the placeholder with the published repository. Press **prefix + I** to
